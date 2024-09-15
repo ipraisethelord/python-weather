@@ -3,6 +3,10 @@
 # git init
 # git add .
 # git commit -m "python flask tutorial"
+# if you have set up git repository, use these
+# git remote add origin https://github.com/ipraisethelord/python-weather.git
+# git branch -M main
+# git push -u origin main
 from flask import Flask, render_template, request
 from weather import get_current_weather
 from waitress import serve
@@ -35,7 +39,7 @@ def get_weather():
 
 
 
-if __name__=="__main__":
-    # for error using debug mode
-    # os.environ['FLASK_ENV'] = 'development'
-    serve(app, host="0.0.0.0", port=8000)
+# if __name__=="__main__":
+#     # for error using debug mode
+#     # os.environ['FLASK_ENV'] = 'development'
+#     serve(app, host="0.0.0.0", port=8000)
