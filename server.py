@@ -39,7 +39,8 @@ def get_weather():
 
 
 
-# if __name__=="__main__":
+if __name__=="__main__":
+    app.run()
 #     # for error using debug mode
 #     # os.environ['FLASK_ENV'] = 'development'
 #     serve(app, host="0.0.0.0", port=8000)
